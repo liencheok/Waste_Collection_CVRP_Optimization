@@ -1,56 +1,51 @@
-# Waste Collection Route Optimization using CVRP
+# Waste Collection CVRP Optimization
 
-This project focuses on optimizing municipal waste collection routes in Langkawi, Malaysia, using **Capacitated Vehicle Routing Problem (CVRP)** techniques.
+This project focuses on optimizing municipal waste collection routes in Langkawi, Malaysia,
+using the Capacitated Vehicle Routing Problem (CVRP).
 
-The study applies heuristic and metaheuristic algorithms to reduce travel distance, operational time, and improve route balance.
+Heuristic and metaheuristic approaches are applied to improve routing efficiency and reduce
+total travel distance and operational time.
 
-## Project Background
-Waste collection in Langkawi faces challenges due to:
-- Increasing waste volume from tourism
-- Fixed and inefficient routing plans
-- High operational and fuel costs
+## Project Overview
 
-This project models the waste collection problem as a CVRP and proposes optimized routing solutions.
+Waste collection in Langkawi faces challenges due to increasing waste volume from tourism
+and inefficient fixed routing schedules.
+
+This project models the waste collection process as a CVRP and applies optimization techniques
+to generate more efficient vehicle routes while considering real-world constraints such as
+vehicle capacity and service locations.
 
 ## Methods Used
-- **Path Cheapest Arc (PCA)** heuristic to generate initial routes
-- **Path Cheapest Arc with Guided Local Search (PCA-GLS)** for route improvement
-- **Google OR-Tools** for VRP modeling and optimization
 
-## Data
-- Real-world waste collection locations in Langkawi
-- Depot and landfill coordinates
-- Vehicle capacity, service time, and operational constraints
-- Distance matrix generated from geographic coordinates
+- Capacitated Vehicle Routing Problem (CVRP)
+- Heuristic and metaheuristic routing approaches
+- Google OR-Tools for route optimization
+- Geographic distance modeling
+- Route visualization using Folium
 
-## My Contribution
-This project was completed as part of my final year research.  
-My responsibilities included:
-- Formulating the CVRP model
-- Implementing PCA and PCA-GLS algorithms using Python
-- Generating distance matrices and route solutions
-- Visualizing optimized routes using Folium
-- Evaluating and comparing heuristic performance
+## Files Description
 
-## Key Results
-- PCA-GLS reduced total travel distance by **13.25%**
-- Operational time reduced by **3.89%**
-- Improved workload balance across vehicles
+- `cvrp_solution.py`  
+  Main Python script that formulates and solves the CVRP using optimization techniques.
 
-## Tools & Technologies
-- Python
-- Google OR-Tools
-- Folium (route visualization)
-- Pandas
-- Excel (data preparation)
+- `distance_matrix.py`  
+  Generates the distance matrix between all waste collection locations based on geographic coordinates.
 
-## Files
-- `solution.py` – CVRP solution using OR-Tools
-- `distance.py` – Distance matrix generation
-- `coordinate_map.py` – Location mapping
-- `final_solution_map.html` – Route visualization
-- `Dataset Waste Collection Langkawi.xlsx` – Dataset
-- `fyp report heuristic.pdf` – Full research report
+- `location_coordinates.py`  
+  Contains the coordinates of the depot, landfill, and waste collection points in Langkawi.
+
+- `dataset_waste_collection_langkawi.xlsx`  
+  Dataset containing waste collection locations and related operational data.
+
+- `route_visualization.html`  
+  Interactive map visualizing the optimized waste collection routes.
+
+## Results
+
+The optimized routing solution demonstrates reduced total travel distance and improved
+route efficiency compared to non-optimized collection routes.
 
 ## Notes
-This project is based on real-world data and developed for academic research purposes.
+
+This project was developed as part of academic coursework and final year research,
+using real-world inspired data for waste collection routing in Langkawi.
