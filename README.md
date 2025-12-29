@@ -49,3 +49,8 @@ the planned collection paths for each vehicle.
 
 This project was developed as part of academic coursework and final year research,
 using real-world-inspired data for waste collection routing in Langkawi.
+
+## Route Visualization
+
+![Optimized Waste Collection Routes](route_visualization.png)
+
